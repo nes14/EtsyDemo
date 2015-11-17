@@ -11,9 +11,28 @@
 <%= render 'layouts/header'%>
 
 <div class="container">
+	<p class="notice">
+		<%= notice %>
+		<!-- <span class="close_alert"> &times; </span> -->
+	</p>
+    <p class="alert "><%= alert %></p>
+
+	    
 	<%= yield %>
 	<%= render 'layouts/footer' %>
 </div>
+
+
+// <script type="text/javascript">
+// 	var $close_alert = $('.close_alert');
+// 	var $parent;
+
+// 	$close_alert.on('click', function(event) {
+// 		$parent = $(this).parent();
+// 		console.log($parent);
+// 		$parent.addClass('hidden');
+// 	});
+// </script>
 
 </body>
 </html>
